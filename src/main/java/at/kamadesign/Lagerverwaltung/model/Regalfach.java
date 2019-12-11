@@ -3,7 +3,7 @@ package at.kamadesign.Lagerverwaltung.model;
 public class Regalfach {
     private int fach_regal_reihe;
     private int fach_regal_spalte;
-    private int fach_product;
+    private Product fach_product;
     private int fach_product_menge;
 
     public Regalfach(int fach_regal_reihe, int fach_regal_spalte) {
@@ -27,11 +27,11 @@ public class Regalfach {
         this.fach_regal_spalte = fach_regal_spalte;
     }
 
-    public int getFach_product() {
+    public Product getFach_product() {
         return fach_product;
     }
 
-    public void setFach_product(int fach_product) {
+    public void setFach_product(Product fach_product) {
         this.fach_product = fach_product;
     }
 

@@ -58,4 +58,12 @@ public class Regal {
     public void setRegal_faecher(ArrayList<Regalfach> regal_faecher) {
         this.regal_faecher = regal_faecher;
     }
+    public void fill_fach(int reihe,int spalte,Product product){
+        ArrayList<Regalfach> regal_faecher = getRegal_faecher();
+        for (Regalfach fach: regal_faecher) {
+            if(fach.getFach_regal_reihe() == reihe && fach.getFach_regal_spalte() == spalte) {
+                fach.setFach_product(product);
+            }
+        }
+    }
 }

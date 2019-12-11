@@ -5,6 +5,8 @@ import at.kamadesign.Lagerverwaltung.model.Regalfach;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import java.util.ArrayList;
+
 @SpringBootApplication
 public class LagerverwaltungApplication {
 
@@ -25,6 +27,7 @@ public class LagerverwaltungApplication {
 			int spalte  = fach.getFach_regal_spalte();
 			System.out.println("Reihe " + reihe + " Spalte " + spalte);
 		}
+
 
 	}
 }
